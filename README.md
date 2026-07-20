@@ -6,50 +6,98 @@ Windows Server Active Directory Home Lab demonstrating user management, security
 Verified the Windows Server hostname (WIN-SERVER) and domain configuration (mydomain.local).
 ![01-Local-Server-Properties](01-Local-Server-Properties.png)
 
-### 02 - Active Directory Domain Services
+## 02 - Active Directory Domain Services
+
 Verified Active Directory Domain Services (AD DS) is installed and operational.
 
-### 03 - Active Directory Organizational Units
+![Active Directory Domain Services](02-AD-DS.png)
+
+## 03 - Active Directory Organizational Units
+
 Verified the creation of the HR, IT, and Sales Organizational Units (OUs).
 
-### 04 - IT Organizational Unit
+![Active Directory Organizational Units](03-Active-Directory-OUs.png)
+
+## 04 - IT Organizational Unit
+
 Verified IT users and the IT_Users security group.
 
-### 05 - HR Organizational Unit
+![IT Organizational Unit](04-IT-OU-Users-and-Group.png)
+
+## 05 - HR Organizational Unit
+
 Verified HR users and the HR_Users security group.
 
-### 06 - Sales Organizational Unit
+![HR Organizational Unit](05-HR-OU-Users-and-Group.png)
+
+## 06 - Sales Organizational Unit
+
 Verified Sales users and the Sales_Users security group.
 
-### 07 - Sales_Test Group Membership
+![Sales Organizational Unit](06-Sales-OU-Users-and-Group.png)
+
+## 07 - Sales_Test Group Membership
+
 Confirmed Sales_Test is a member of the Sales_Users security group.
 
-### 08 - IT User Group Membership
+![Sales_Test Group Membership](07-Sales-Test-Group-Membership.png)
+
+## 08 - IT User Group Membership
+
 Confirmed the IT user is assigned to the IT_Users security group.
 
-### 09 - HR User Group Membership
+![IT User Group Membership](08-IT-User-Group-Membership.png)
+
+## 09 - HR User Group Membership
+
 Confirmed the HR user is assigned to the HR_Users security group.
 
-### 10 - Windows 10 Domain Join
+![HR User Group Membership](09-HR-User-Group-Membership.png)
+
+## 10 - Windows 10 Domain Join
+
 Verified the Windows 10 client successfully joined the mydomain.local domain.
 
-### 11 - (If applicable)
+![Windows 10 Domain Join](10-Windows10-Client-Domain-Joined.png)
+
+## 11 - Sales Shared Folder
+
 Verified the Sales shared folder is available on the network.
 
-### 12 - Shared Folder Access
+![Sales Shared Folder](11-Sales-Share-Visible.png)
+
+## 12 - Shared Folder Access
+
 Verified Sales_Test successfully accessed the Sales shared folder.
 
-### 13 - Shared Folder Permission Error
+![Shared Folder Access](12-Sales-Share-Opened.png)
+
+## 13 - Shared Folder Permission Error
+
 Identified a permissions issue preventing Sales_Test from creating files in the Sales shared folder.
 
-### 14 - Share Permissions Updated
+![Shared Folder Permission Error](13-Sales-Write-Permission-Error.png)
+
+## 14 - Share Permissions Updated
+
 Updated Share Permissions by granting the Sales_Users group Change and Read access.
 
-### 15 - Write Permission Success
+![Share Permissions Updated](14-Sales-Share-Permissions-Updated.png)
+
+## 15 - Write Permission Success
+
 Verified Sales_Test successfully created a text document after the Share Permissions issue was resolved.
 
-### 16 - HR Authentication Test
+![Write Permission Success](15-Sales-Write-Permission-Success.png)
+
+## 16 - HR Authentication Test
+
 Verified Charnell D. Turpin successfully authenticated to the mydomain.local domain.
 
-### 17 - Access Denied Test
+![HR Authentication Test](16-HR-Authentication-Test.png)
+
+## 17 - Access Denied Test
+
 Confirmed the HR user could not access the Sales shared folder, demonstrating role-based access control and the Principle of Least Privilege.
+
+![Access Denied Test](17-HR-Access-Denied-Sales-Share.png)

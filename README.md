@@ -4,6 +4,7 @@ Windows Server Active Directory Home Lab demonstrating user management, security
 
 ### 01 - Local Server Properties
 Verified the Windows Server hostname (WIN-SERVER) and domain configuration (mydomain.local).
+01-Local-Server-Properties.png
 
 ### 02 - Active Directory Domain Services
 Verified Active Directory Domain Services (AD DS) is installed and operational.
